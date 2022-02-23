@@ -1,0 +1,231 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="ar" dir="rtl">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>أسود لارافيل | ترجمة تطبيقات لارافيل</title>
+	<link rel="stylesheet" href="doc/assets/css/documenter_style.css" media="all">
+	<link rel="shortcut icon" type="image/x-icon" href="doc/assets/images/icon.png" />
+	<link rel="stylesheet" href="doc/assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body class="documenter-project-mp-price" dir="rtl">
+	<div id="documenter_sidebar">
+		<h1 class="title">أسود لارافيل | ترجمة تطبيقات لارافيل</h1>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#introd"> مقدمة </a></li>
+			<li><a href="#translation"> الطريقة العادية </a></li>
+			<li><a href="#lang_switcher">مبدل اللغات </a></li>
+		</ul>
+		<div id="documenter_copyright">
+			By:MSHM بواسطة محمود سامي حسين متولي
+		</div>
+	</div>
+	<div id="documenter_content">
+		<section id="introd">
+			<div class="text-center">
+				<h1> بسم الله الرحمن الرحيم </h1>
+				<h1> والصلاة والسلام علي أشرف المرسلين سيدنا محمد عليه أفضل الصلاة والسلام
+					وأحمد الله جل وعلا الذي وفقني لهذا العمل </h1>
+				<h1> يتناول هذا الكتاب شرح ترجمة تطبيقات لارافيل </h1>
+				<h2>
+					لمتابعة هذا الكتاب يجب أن يكون لديك معرفة مسبقة بلارافيل و php </h2>
+				<h2><a href="https://mahmoudsamyhosein.github.io/php-liones/">لقراءة كتاب أسود الذي يشرح أساسيات لغة
+						php</a> </h2>
+				<h2><a
+						href="https://scriptaty.com/shop/item/4dca3d/%D9%83%D8%AA%D8%A7%D8%A8-%D8%A3%D8%B3%D9%88%D8%AF-php-%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A8%D9%84%D8%BA%D8%A9-php">لتحميل
+						كتاب أسود الذي يشرح أساسيات لغة php</a> </h2>
+			</div>
+			<hr>
+			<img src="doc/assets/images/laravel9.png" alt="laravel-image-placeholder">
+			<hr>
+		</section>
+
+
+		<!-- الطريقة العادية-->
+		<section id="translation">
+			<div>
+				 <h1>عند العمل علي تطبيقات لارافيل لابد لك من أن تقوم بترجمة موقعك الي لغة أخري فلنفرض في هذا المثال اللغة العربية 
+				 ويتم ذلك عبر 3 خطوات هم 
+				 الأولي : الذهاب الي مجلد <span style="color: crimson;">config/app.php</span>
+				 وتغيير
+				 أعدادات الملف كالتالي للحقلين التاليين 
+				 <ol  style="margin-right: 30px;">
+					<h4><li>'locale' => 'en', الي 'locale' => 'ar' هذا الحقل يعني اللغة الافتراضية للتطبيق </li></h4>
+					<h4><li>'fallback_locale' => 'en', الي 'fallback_locale' => 'ar',في حالة لم يتم العثور علي اللغة أعرض هذه اللغة</li></h4>
+				 </ol>
+				</h1>
+				<hr>
+				<img src="doc/assets/images/step_1.PNG" alt="local image files">
+				<hr>
+				<img src="doc/assets/images/step-1_after.PNG" alt="local image files-2">
+				<hr>
+				<h1 class="text-bymshm">الخطوة الثانية </h1>
+				  الذهاب الي مجلد <span style="color: crimson;">resources/lang/en</span>
+				  ونسخ  المحتوي الذي بداخلة الي مجلد جديد بنفس الاسم(ar) الذي تم تغييرة في الخطوة السابقة 
+				وسوف تجد بهذا المجلد أربعة ملفات وهم كالتالي 
+				  <br>
+				  <hr>
+				   <ol style="margin-right: 30px;">
+						<li>(auth) رسائل المصادقة التي تعرض للمستخدم</li>
+						<li>(pagination) في حال كان هناك محتوي يلزم التنقل بين الصفحات </li>
+						<li>(passwords) كلمات المرور</li>
+						<li>(validation)التحقق من المدخلات ورسائل الخطأ</li>
+					</ol>
+					<hr>
+					<img src="doc/assets/images/step_2_before.PNG" alt="local image files">
+					<hr>
+					<img src="doc/assets/images/step-2_after.PNG" alt="local image files-2">
+					<hr>
+					<h1 class="text-bymshm">الخطوة الثالثة </h1>
+					<h1>
+						<hr>
+						 ترجمة محتوي الملفات مع مراعاة قاعدة  وهي أنه أي كلمة تبدا 
+						 <span style="color: brown; width: 75px; height: 75px;"> <p>(</p> : النقتطين <p>)</p> </span>
+						 سواء كنت تعمل في ملفات لارافيل الافتراضية التي يتم تحميلها مع التطبيق لاول مرة أو أي سكربت أخر 
+						 لا يتم ترجمتها لانها تحمل قيمة متغير .
+						<hr>
+						<img src="doc/assets/images/variables.PNG" alt="local image files-3">
+						<hr>
+						<div class="iframe">
+							<iframe width="800" height="600" al src="https://www.youtube.com/embed/a6rzlkpayAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+							</iframe>
+						</div>
+						
+					</h1>
+
+				</div>
+
+		</section>
+		<!-- الطريقة العادية-->
+		<!-- مبدل اللغات -->
+		<section id="lang_switcher">
+			<h1>
+				خطوات أنشاء مبدل اللغات language switcher</h1>
+			<p>	
+				<ol style="margin-right: 30px;">
+					<li>سوف نقوم بانشاء مشروع جديد بأستخدام الأمر <span style="color: crimson;">composer create-project laravel/laravel translation </span></li>
+					<li>جديد بأستخدام الأمر middleware سوف نقوم بانشاء  <span style="color: crimson;">php artisan make:middleware Language</span></li>
+					<li>جديد بأستخدام الأمر متحكم جديد<span style="color: crimson;">php artisan make:controller LanguageController</span></li>
+				</ol>
+			</p>
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">&lt;?php&nbsp;</span><br>
+
+						<span style="color: #0000BB"></span>namespace App\Http\Middleware;&nbsp;</span><br>
+
+						<span style="color: #0000BB"></span>use Closure;&nbsp;</span><br>
+						<span style="color: #0000BB"></span>use Illuminate\Http\Request;&nbsp;</span><br>
+						<span style="color: #0000BB"></span>use Illuminate\Support\Facades\App;&nbsp;</span><br>
+
+						<span style="color: #0000BB"></span>class Language&nbsp;</span><br>
+						<span style="color: #0000BB"></span>{&nbsp;</span><br>
+							<span style="color: #0000BB"></span>/**&nbsp;</span><br>
+							<span style="color: #0000BB"></span>* Handle an incoming request.&nbsp;</span><br>
+							<span style="color: #0000BB"></span>*&nbsp;</span><br>
+							<span style="color: #0000BB"></span>* @param  \Illuminate\Http\Request  $request&nbsp;</span><br>
+							<span style="color: #0000BB"></span>* @param  \Closure  $next&nbsp;</span><br>
+							<span style="color: #0000BB"></span>* @return mixed&nbsp;</span><br>
+							<span style="color: #0000BB"></span>*/&nbsp;</span><br>
+							<span style="color: #0000BB"></span>public function handle($request, Closure $next)&nbsp;</span><br>
+							<span style="color: #0000BB"></span>{&nbsp;</span><br>
+								<span style="color: #0000BB"></span>if (Session()->has('applocale') AND array_key_exists(Session()->get('applocale'), config('languages'))) {&nbsp;</span><br>
+									<span style="color: #0000BB"></span>App::setLocale(Session()->get('applocale'));&nbsp;</span><br>
+									<span style="color: #0000BB">	}&nbsp;</span><br>
+									<span style="color: #0000BB">else { // This is optional as Laravel will automatically set the fallback language if there is none specified&nbsp;</span><br>
+										<span style="color: #0000BB">	App::setLocale(config('app.fallback_locale'));&nbsp;</span><br>
+										<span style="color: #0000BB">}&nbsp;</span><br>
+										<span style="color: #0000BB">return $next($request);&nbsp;</span><br>
+										<span style="color: #0000BB">	}&nbsp;</span><br>
+										<span style="color: #0000BB">	}&nbsp;</span><br>
+					
+					</div>
+				</code>
+				<hr>
+				<img src="doc/assets/images/middleware.PNG" alt="middleware">
+				<hr>
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">&lt;?php&nbsp;</span><br>
+						<span style="color: #0000BB"></span>return [&nbsp;</span><br>
+						<span style="color: #0000BB"></span>'en' => 'English',&nbsp;</span><br>
+						<span style="color: #0000BB"></span>'fr' => 'Français',&nbsp;</span><br>
+						<span style="color: #0000BB"></span>'ar' => 'Arabic'&nbsp;</span><br>
+						<span style="color: #0000BB"></span>];&nbsp;</span><br>
+						
+					</div>
+				</code>
+			
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">&lt;?php&nbsp;</span><br>
+						<span style="color: #0000BB">namespace App\Http\Controllers;</span><br>
+
+						<span style="color: #0000BB">use Illuminate\Http\Request;</span><br>
+						<span style="color: #0000BB">use Illuminate\Support\Facades\Config;</span><br>
+						<span style="color: #0000BB">use Illuminate\Support\Facades\Session;</span><br>
+						<span style="color: #0000BB">use Illuminate\Support\Facades\Redirect;</span><br>
+
+						<span style="color: #0000BB">class LanguageController extends Controller</span><br>
+						<span style="color: #0000BB">{</span><br>
+									
+							<span style="color: #0000BB">public function switchLang($lang)</span><br>
+							<span style="color: #0000BB">{</span><br>
+								<span style="color: #0000BB">if (array_key_exists($lang, Config::get('languages'))) {</span><br>
+									<span style="color: #0000BB">Session::put('applocale', $lang);</span><br>
+									<span style="color: #0000BB">}</span><br>
+									<span style="color: #0000BB">return Redirect::back();</span><br>
+									<span style="color: #0000BB">}</span><br>
+									<span style="color: #0000BB">}</span><br>
+
+					</div>
+				</code>
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);</span><br>
+					</div>
+				</code>
+
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">npm install</span><br>
+						<span style="color: #0000BB">npm run dev</span><br>
+					</div>
+				</code>
+
+				<code>
+					<div class="phpcode text-center">
+						<span style="color: #0000BB">&lt;?php&nbsp;</span><br>
+						<pre>
+							<span><li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									{{ Config::get('languages')[App::getLocale()] }}
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								@foreach (Config::get('languages') as $lang => $language)
+									@if ($lang != App::getLocale())
+											<a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
+									@endif
+								@endforeach
+								</div>
+							</li>
+						</pre>
+					</div>
+				</code>
+		</section>
+		<!-- مبدل اللغات -->
+
+		<script src="doc/assets/js/jquery.js"></script>
+		<script src="doc/assets/js/jquery.scrollTo.js"></script>
+		<script src="doc/assets/js/jquery.easing.js"></script>
+		<script src="doc/assets/js/script.js"></script>
+</body>
+
+</html>
