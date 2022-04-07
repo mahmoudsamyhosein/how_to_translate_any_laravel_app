@@ -51,6 +51,8 @@
 			<li><a class="current" href="#introd"> مقدمة </a></li>
 			<li><a href="#translation"> الطريقة العادية </a></li>
 			<li><a href="#lang_switcher">مبدل اللغات </a></li>
+			<li><a href="#validation">رسائل التحقق</a></li>
+			<li><a href="#commands">الأوامر</a></li>
 		</ul>
 		<div id="documenter_copyright">
 			<a href="https://github.com/mahmoudsamyhosein">By:MSHMK بواسطة محمود سامي حسين متولي</a>
@@ -204,7 +206,7 @@
 				<pre>
 					Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 				</pre>
-				<h1>في ملف العرض هذا الكود هو المسؤول عن عرض مبدل اللغات بداخل ملف العرض </h1>
+				<h1> هذا الكود هو المسؤول عن عرض مبدل اللغات بداخل ملف العرض </h1>
 				<pre>
 							&lt;li class="nav-item dropdown">
 							&lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -219,6 +221,22 @@
 							&lt;/div>
 							&lt;/li>
 				</pre>
+		</section>
+		<section id="validation"> 
+			<h1>لترجمة رسائل التحقق </h1>
+			<pre>
+				@error('أسم رسالة التحقق') &lt;p class="tex-danger"> {{$message}} &lt;/p> @enderror
+			</pre>
+			<h1>توجة الي ملف <span style="color: crimson;">lang/ar/validation.php</span></h1>
+			<img src="doc/assets/images/last.PNG" alt="local image files-2">
+			<h1>
+				وقم باضافه محتوي الرسائل الذي تريدة بداخل المصفوفة المفتاحية <span  style="color: crimson;"> &lt;='attributes' </span></h1>
+		</section>
+		<section id="commands"> 
+			<h1>أوامر الترجمة المختلفة </h1>
+			<p>أي محتوي نصي تريد ترجمته بداخل ملف بالأسم site مثلا</p>
+			<h1><span style="color: crimson;"><pre>{{__('site.any_string_you_want_to_translate')}}</pre></span></h1>
+			
 		</section>
 		<!-- مبدل اللغات -->
 		<script src="doc/assets/js/jquery.js"></script>
